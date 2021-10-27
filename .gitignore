@@ -31,3 +31,9 @@ obj/Release/net5.0/name-sorter.csproj.CoreCompileInputs.cache
 obj/Release/net5.0/name-sorter.dll
 obj/Release/net5.0/name-sorter.pdb
 obj/Release/net5.0/name-sorter.dll
+obj/Release/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+obj/Release/net5.0/name-sorter.AssemblyInfo.cs
+obj/Release/net5.0/name-sorter.AssemblyInfoInputs.cache
+obj/Release/net5.0/name-sorter.assets.cache
+obj/Release/net5.0/name-sorter.csproj.AssemblyReference.cache
+obj/Release/net5.0/name-sorter.GeneratedMSBuildEditorConfig.editorconfig
