@@ -50,3 +50,4 @@ bin/Debug/net5.0/name-sorter.dll
 bin/Debug/net5.0/name-sorter.deps.json
 bin/Debug/net5.0/Google.Protobuf.dll
 .vs/name-sorter/v17/.suo
+obj/Debug/net5.0/name-sorter.csproj.CoreCompileInputs.cache
