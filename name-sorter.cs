@@ -11,11 +11,8 @@ namespace name_sorter
         static void Main(string[] args)
         {
 
-            // Create a string variable and get user input from the keyboard and store it in the variable
+            // Set file path using value entered into the command line
             String filePath = System.IO.Path.GetFullPath(Directory.GetCurrentDirectory() + @"\" + args[0]);
-
-            //WORKING:
-            //String filePath = System.IO.Path.GetFullPath(Directory.GetCurrentDirectory() + @"\unsorted-names-list.txt");
 
             // Print the filepath
             Console.WriteLine("File Path is: " + filePath);
@@ -36,8 +33,6 @@ namespace name_sorter
             // Sort the list by surname then first name
             sortList = sortList.OrderBy(x => x.Substring(x.LastIndexOf(' ') + 1) + x).ToList();
 
-            Console.WriteLine("Names have been sorted:");
-
             // Loop through the new list writing each entry to the console
             foreach (var line in sortList)
             {
@@ -46,13 +41,6 @@ namespace name_sorter
 
             // Create the output file from the list of sorted names
             File.WriteAllLines("sorted-names-list.txt", sortList);
-
-            // Command Line:
-            // D:
-            // cd D:\Development\C#\name-sorter
-            // csc name-sorter.cs
-            // dotnet run
-            // D:\Development\C#\name-sorter\unsorted-names-list.txt
         }
     }
 }
