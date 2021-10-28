@@ -37,3 +37,6 @@ obj/Release/net5.0/name-sorter.AssemblyInfoInputs.cache
 obj/Release/net5.0/name-sorter.assets.cache
 obj/Release/net5.0/name-sorter.csproj.AssemblyReference.cache
 obj/Release/net5.0/name-sorter.GeneratedMSBuildEditorConfig.editorconfig
+.vs/name-sorter/DesignTimeBuild/.dtbcache.v2
+.vs/name-sorter/project-colors.json
+.vs/name-sorter/v17/.futdcache.v1
