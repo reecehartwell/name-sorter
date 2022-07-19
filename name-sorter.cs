@@ -12,29 +12,18 @@ namespace name_sorter
         {
 
             // Set file path using value entered into the command line
-            String filePath = System.IO.Path.GetFullPath(Directory.GetCurrentDirectory() + @"\" + args[0]);
-
-            // Print the filepath
-            Console.WriteLine("File Path is: " + filePath);
-
+            
+            Data dataObj = new Data();
             // Save each line from the text file into an array using the filepath
-            string[] lines = System.IO.File.ReadAllLines(filePath);
+            List<string> sortList = dataObj.ReadNames(arg[0]);
 
-            // Create List to be used for sorting
-            List<string> sortList = new List<string>();
 
-            // Loop through array adding each entry to the list
-            foreach (string line in lines)
-            {
-                //Console.WriteLine(line.ToString());
-                sortList.Add(line);
-            }
+            SortList sortObj = new SortList();
+            List<string> finalList = sortObj.SortedList(sortList);
 
-            // Sort the list by surname then first name
-            sortList = sortList.OrderBy(x => x.Substring(x.LastIndexOf(' ') + 1) + x).ToList();
 
             // Loop through the new list writing each entry to the console
-            foreach (var line in sortList)
+            foreach (var line in finalList)
             {
                 Console.WriteLine(line.ToString());
             }
